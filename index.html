@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Phoenix Sanctum™ — Personalised Frequency Technology</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Practitioner-guided frequency wellness practice working with chronic patterns through bioresonance, scalar field modalities and a structured progression. Dee Why, NSW." />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   TOKENS — Phoenix Sanctum™ Design System v1.0
+   Source: PS Brand Guidelines v1.2 · 27 April 2026
+============================================================ */
+:root {
+  /* Surfaces */
+  --ps-black:           #0A0A0A;
+  --ps-white:           #FFFFFF;
+  --ps-white-warm:      #F7F4EF;
+  --ps-web-dark:        #101316;
+  --ps-web-depth:       #161C22;
+
+  /* Brand palette */
+  --ps-gold-light:      #C68A2E;
+  --ps-gold-dark:       #E8A547;
+  --ps-turq-light:      #0E9994;
+  --ps-turq-dark:       #5DEEE2;
+  --ps-flame-light:     #D9531E;
+  --ps-flame-dark:      #F47B3F;
+
+  /* Utility */
+  --ps-near-black:      #0F1419;
+  --ps-mid-grey:        #6B7280;
+  --ps-light-grey:      #E5E7EB;
+
+  /* Typography */
+  --font-display:       'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body:          'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-ui:            'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Easing */
+  --ease:               cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* ============================================================
+   RESET & BASE
+============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ps-near-black);
+  background: var(--ps-white);
+}
+
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+button { font: inherit; cursor: pointer; }
+::selection { background: var(--ps-gold-dark); color: var(--ps-black); }
+
+/* ============================================================
+   LAYOUT
+============================================================ */
+.ps-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.ps-section { padding: 96px 0; }
+.ps-section-dark  { background: var(--ps-black); color: #fff; }
+.ps-section-light { background: var(--ps-white); color: var(--ps-near-black); }
+.ps-section-warm  { background: var(--ps-white-warm); color: var(--ps-near-black); }
+
+/* Section headers */
+.ps-sec-head { margin-bottom: 56px; }
+.ps-eyebrow {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ps-mid-grey);
+  margin-bottom: 16px;
+}
+.ps-eyebrow-gold  { color: var(--ps-gold-dark); }
+.ps-eyebrow-turq  { color: var(--ps-turq-dark); }
+.ps-eyebrow-flame { color: var(--ps-flame-dark); }
+.ps-eyebrow-gold-light  { color: var(--ps-gold-light); }
+.ps-eyebrow-turq-light  { color: var(--ps-turq-light); }
+.ps-eyebrow-flame-light { color: var(--ps-flame-light); }
+
+.ps-display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(40px, 5.5vw, 76px);
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+  color: #fff;
+  margin: 0 0 28px;
+  max-width: 16ch;
+}
+.ps-display em {
+  font-style: italic;
+  font-weight: 700;
+  color: var(--ps-gold-dark);
+}
+
+.ps-h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(26px, 3.2vw, 42px);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--ps-near-black);
+  margin: 0 0 18px;
+  max-width: 22ch;
+}
+.ps-section-dark .ps-h1 { color: #fff; }
+
+.ps-h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.ps-h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: -0.005em;
+  margin: 8px 0;
+}
+
+.ps-lede {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ps-mid-grey);
+  max-width: 60ch;
+}
+.ps-lede-dark { color: #B7BCC4; }
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+.ps-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 0;
+  line-height: 1;
+  transition: background-color 200ms var(--ease), color 200ms var(--ease), border-color 200ms var(--ease);
+  white-space: nowrap;
+}
+.ps-btn-primary-dark  { background: var(--ps-gold-dark); color: var(--ps-black); }
+.ps-btn-primary-dark:hover  { background: #d8973b; }
+.ps-btn-primary-light { background: var(--ps-black); color: var(--ps-gold-light); }
+.ps-btn-primary-light:hover { background: #1a1a1a; }
+.ps-btn-text {
+  background: transparent;
+  padding: 6px 0;
+  color: var(--ps-gold-dark);
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  letter-spacing: 0.1em;
+}
+.ps-btn-text-light { color: var(--ps-gold-light); }
+.ps-btn-arrow { letter-spacing: 0; font-size: 14px; }
+
+/* ============================================================
+   PILLS
+============================================================ */
+.ps-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 11px;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 1px solid;
+}
+
+/* ============================================================
+   NAV
+============================================================ */
+.ps-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10,10,10,0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.ps-nav-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+  gap: 24px;
+}
+.ps-nav-brand img { height: 22px; }
+.ps-nav-links {
+  display: flex;
+  gap: 32px;
+  flex: 1;
+  justify-content: center;
+}
+.ps-nav-link {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.72);
+  padding: 6px 0;
+  position: relative;
+  transition: color 200ms var(--ease);
+}
+.ps-nav-link:hover { color: #fff; }
+.ps-nav-link.on { color: var(--ps-gold-dark); }
+.ps-nav-link.on::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: -19px;
+  height: 1px;
+  background: var(--ps-gold-dark);
+}
+.ps-nav-actions { display: flex; align-items: center; gap: 18px; }
+.ps-nav-signin {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.72);
+  transition: color 200ms var(--ease);
+}
+.ps-nav-signin:hover { color: #fff; }
+
+/* ============================================================
+   HERO
+============================================================ */
+.ps-hero {
+  position: relative;
+  background: var(--ps-black);
+  padding: 120px 0 140px;
+  overflow: hidden;
+}
+.ps-hero-glow {
+  position: absolute;
+  inset: 0;
+  background: url("project/assets/overlays/hero_radial_glow.png") center / cover no-repeat;
+  opacity: 0.32;
+  pointer-events: none;
+}
+.ps-hero-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,10,10,0) 50%, rgba(10,10,10,0.85) 100%);
+}
+.ps-hero-inner {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.ps-hero-lede {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  color: #B7BCC4;
+  max-width: 58ch;
+  margin: 0 0 40px;
+}
+.ps-hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 96px;
+}
+.ps-hero-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  max-width: 880px;
+}
+.ps-hero-meta-label { margin-bottom: 8px; }
+.ps-hero-meta-val {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #fff;
+  margin-top: 6px;
+}
+
+/* ============================================================
+   FRAMEWORK SECTION
+============================================================ */
+.ps-fw-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.ps-fw-card {
+  padding: 32px;
+  background: var(--ps-white);
+  border: 1px solid var(--ps-light-grey);
+  border-top: 2px solid var(--ps-light-grey);
+  border-radius: 0;
+}
+.ps-fw-card-gold  { border-top-color: var(--ps-gold-light); }
+.ps-fw-card-turq  { border-top-color: var(--ps-turq-light); }
+.ps-fw-card-flame { border-top-color: var(--ps-flame-light); }
+.ps-fw-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  margin-bottom: 24px;
+}
+.ps-fw-num-gold  { color: var(--ps-gold-light); }
+.ps-fw-num-turq  { color: var(--ps-turq-light); }
+.ps-fw-num-flame { color: var(--ps-flame-light); }
+.ps-fw-card .ps-h3 { margin: 0 0 10px; color: var(--ps-near-black); }
+.ps-fw-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ps-mid-grey);
+  margin: 0;
+}
+
+/* ============================================================
+   PATHWAYS SECTION
+============================================================ */
+.ps-section-pathways { position: relative; overflow: hidden; }
+.ps-pathways-field {
+  position: absolute;
+  inset: 0;
+  background: url("project/assets/overlays/circular_field.png") center / 800px no-repeat;
+  opacity: 0.18;
+  pointer-events: none;
+}
+.ps-section-pathways .ps-container { position: relative; z-index: 1; }
+.ps-pw-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+.ps-pw-card {
+  padding: 24px 20px 28px;
+  background: var(--ps-web-dark);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.ps-pw-card-active {
+  border-color: var(--ps-turq-dark);
+}
+.ps-pw-card-active::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; right: 0;
+  height: 2px;
+  background: var(--ps-turq-dark);
+}
+.ps-pw-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ps-pw-img img { width: 100%; height: 100%; object-fit: contain; }
+.ps-pw-placeholder {
+  width: 80px; height: 80px;
+  border: 1px dashed rgba(232,165,71,0.4);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(232,165,71,0.4);
+  font-size: 20px;
+}
+.ps-pw-num {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--ps-mid-grey);
+  margin-bottom: 6px;
+}
+.ps-pw-card .ps-h3 {
+  margin: 0 0 8px;
+  color: var(--ps-gold-dark);
+  font-size: 16px;
+}
+.ps-pw-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #B7BCC4;
+  margin: 0;
+}
+
+/* ============================================================
+   PILLARS SECTION
+============================================================ */
+.ps-pillars-list {
+  border-top: 1px solid var(--ps-light-grey);
+}
+.ps-pillar-row {
+  display: grid;
+  grid-template-columns: 56px 28px 260px 1fr;
+  align-items: baseline;
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--ps-light-grey);
+}
+.ps-pillar-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: var(--ps-gold-light);
+}
+.ps-pillar-tick { color: var(--ps-turq-light); }
+.ps-pillar-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--ps-near-black);
+}
+.ps-pillar-body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--ps-mid-grey);
+  line-height: 1.55;
+}
+
+/* ============================================================
+   TECHNOLOGY SECTION
+============================================================ */
+.ps-tech-list { border-top: 1px solid rgba(255,255,255,0.1); }
+.ps-tech-row {
+  display: grid;
+  grid-template-columns: 240px 220px 1fr 24px;
+  align-items: center;
+  padding: 24px 0 24px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-left: 2px solid transparent;
+  gap: 32px;
+  transition: background-color 200ms var(--ease);
+}
+.ps-tech-row:hover { background-color: rgba(255,255,255,0.02); }
+.ps-tech-row-active {
+  border-left-color: var(--ps-flame-dark);
+  background-color: rgba(244,123,63,0.04);
+}
+.ps-tech-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+.ps-tech-spec {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ps-gold-dark);
+}
+.ps-tech-row-active .ps-tech-spec { color: var(--ps-flame-dark); }
+.ps-tech-note {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: #B7BCC4;
+}
+.ps-tech-arrow {
+  font-size: 14px;
+  color: #B7BCC4;
+  text-align: right;
+}
+
+/* ============================================================
+   SIGNAL SECTION
+============================================================ */
+.ps-signal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.ps-signal-form {
+  margin-top: 32px;
+  display: flex;
+  gap: 0;
+  max-width: 460px;
+}
+.ps-signal-form input {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--ps-near-black);
+  background: transparent;
+  padding: 14px 16px;
+  border: 1px solid var(--ps-light-grey);
+  border-right: 0;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+  transition: border-color 200ms var(--ease);
+}
+.ps-signal-form input:focus { border-color: var(--ps-gold-light); }
+.ps-signal-form .ps-btn { border-radius: 0 2px 2px 0; }
+.ps-signal-issues { display: flex; flex-direction: column; gap: 12px; }
+.ps-signal-card {
+  padding: 22px 24px;
+  border-left: 2px solid var(--ps-light-grey);
+  background: var(--ps-white);
+  border-right: 1px solid var(--ps-light-grey);
+  border-top: 1px solid var(--ps-light-grey);
+  border-bottom: 1px solid var(--ps-light-grey);
+}
+.ps-signal-card-gold  { border-left-color: var(--ps-gold-light); }
+.ps-signal-card-turq  { border-left-color: var(--ps-turq-light); }
+.ps-signal-card-flame { border-left-color: var(--ps-flame-light); }
+.ps-signal-card .ps-h3 {
+  margin: 8px 0 6px;
+  color: var(--ps-near-black);
+  font-size: 15px;
+}
+.ps-signal-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ps-mid-grey);
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.ps-footer {
+  background: var(--ps-black);
+  padding: 72px 0 40px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.ps-footer-top {
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+  gap: 80px;
+  margin-bottom: 56px;
+}
+.ps-footer-brand img { height: 24px; margin-bottom: 18px; }
+.ps-footer-brand p {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--ps-mid-grey);
+  line-height: 1.6;
+  max-width: 32ch;
+}
+.ps-footer-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.ps-footer-col-head {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ps-gold-dark);
+  margin-bottom: 14px;
+}
+.ps-footer-cols a {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: rgba(255,255,255,0.72);
+  padding: 6px 0;
+  transition: color 200ms var(--ease);
+}
+.ps-footer-cols a:hover { color: #fff; }
+.ps-footer-rule {
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin-bottom: 20px;
+}
+.ps-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ps-mid-grey);
+  margin-bottom: 24px;
+}
+.ps-disclaimer {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 11px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.35);
+  max-width: 80ch;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width: 1024px) {
+  .ps-pw-grid { grid-template-columns: repeat(3, 1fr); }
+  .ps-tech-row { grid-template-columns: 1fr 1fr 24px; }
+  .ps-tech-row .ps-tech-note { display: none; }
+}
+
+@media (max-width: 768px) {
+  .ps-nav-links { display: none; }
+  .ps-hero { padding: 80px 0 96px; }
+  .ps-hero-meta { grid-template-columns: 1fr; gap: 16px; }
+  .ps-hero-cta { flex-direction: column; align-items: flex-start; }
+  .ps-fw-grid { grid-template-columns: 1fr; }
+  .ps-pw-grid { grid-template-columns: repeat(2, 1fr); }
+  .ps-pillar-row { grid-template-columns: 40px 1fr; gap: 12px; }
+  .ps-pillar-tick, .ps-pillar-body { display: none; }
+  .ps-signal-grid { grid-template-columns: 1fr; gap: 48px; }
+  .ps-footer-top { grid-template-columns: 1fr; gap: 40px; }
+  .ps-footer-cols { grid-template-columns: repeat(2, 1fr); }
+  .ps-tech-row { grid-template-columns: 1fr; }
+  .ps-tech-row .ps-tech-spec, .ps-tech-row .ps-tech-arrow { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+============================================================ -->
+<nav class="ps-nav" id="main-nav">
+  <div class="ps-nav-inner">
+    <a href="#" class="ps-nav-brand">
+      <img src="project/assets/logo/PS_Logo_Horizontal_Gold_OnBlack.png" alt="Phoenix Sanctum™" />
+    </a>
+    <div class="ps-nav-links" id="nav-links">
+      <a href="#framework" class="ps-nav-link" data-section="framework">Framework</a>
+      <a href="#pathways"  class="ps-nav-link on" data-section="pathways">Pathways</a>
+      <a href="#technology" class="ps-nav-link" data-section="technology">Technology</a>
+      <a href="#signal"    class="ps-nav-link" data-section="signal">Sanctum Signal</a>
+      <a href="#contact"   class="ps-nav-link" data-section="contact">Contact</a>
+    </div>
+    <div class="ps-nav-actions">
+      <a href="#" class="ps-nav-signin">Sign in</a>
+      <a href="#contact" class="ps-btn ps-btn-primary-dark">Begin Intake</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="ps-hero" id="hero">
+  <div class="ps-hero-glow" aria-hidden="true"></div>
+  <div class="ps-hero-inner">
+    <div class="ps-eyebrow ps-eyebrow-gold">Phoenix Sanctum™ · Dee Why, NSW</div>
+    <h1 class="ps-display">
+      Personalised frequency technology<br>
+      that supports the body's<br>
+      <em>regulatory capacity.</em>
+    </h1>
+    <p class="ps-hero-lede">
+      A practitioner-guided practice working with chronic patterns through bioresonance,
+      scalar field modalities and a structured six-week progression. Considered work for
+      clients who want technical depth, not promises.
+    </p>
+    <div class="ps-hero-cta">
+      <a href="#contact" class="ps-btn ps-btn-primary-dark">Begin Intake</a>
+      <a href="#framework" class="ps-btn ps-btn-text">Read the framework <span class="ps-btn-arrow">→</span></a>
+    </div>
+    <div class="ps-hero-meta">
+      <div>
+        <div class="ps-eyebrow ps-eyebrow-turq ps-hero-meta-label">Modalities</div>
+        <div class="ps-hero-meta-val">Bioresonance · Scalar · Plasma · PEMF</div>
+      </div>
+      <div>
+        <div class="ps-eyebrow ps-eyebrow-gold ps-hero-meta-label">Working phase</div>
+        <div class="ps-hero-meta-val">Six weeks · structured progression</div>
+      </div>
+      <div>
+        <div class="ps-eyebrow ps-eyebrow-flame ps-hero-meta-label">Format</div>
+        <div class="ps-hero-meta-val">In-clinic · remote continuity</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FRAMEWORK
+============================================================ -->
+<section class="ps-section ps-section-light" id="framework">
+  <div class="ps-container">
+    <div class="ps-sec-head">
+      <div class="ps-eyebrow">The Framework</div>
+      <h2 class="ps-h1">A measured way of working with the body's adaptive systems.</h2>
+      <p class="ps-lede">
+        We treat the body as an informational system rather than a biochemical machine.
+        Sessions begin with reading — biofeedback first — and progress through frequency
+        application, remote continuity, and structured reassessment over a defined working phase.
+      </p>
+    </div>
+    <div class="ps-fw-grid">
+      <div class="ps-fw-card ps-fw-card-gold">
+        <div class="ps-fw-num ps-fw-num-gold">01</div>
+        <h3 class="ps-h3">Read before transmit</h3>
+        <p>Every working phase begins with biofeedback. We do not impose frequencies; we observe what the body is already organising around.</p>
+      </div>
+      <div class="ps-fw-card ps-fw-card-turq">
+        <div class="ps-fw-num ps-fw-num-turq">02</div>
+        <h3 class="ps-h3">Six-week progression</h3>
+        <p>Stability is earned, not scheduled. Tier advancement is gated by observable settling, not the calendar.</p>
+      </div>
+      <div class="ps-fw-card ps-fw-card-gold">
+        <div class="ps-fw-num ps-fw-num-gold">03</div>
+        <h3 class="ps-h3">Considered, not promised</h3>
+        <p>We frame outcomes as observed rather than guaranteed. Anecdotal evidence is presented as anecdotal.</p>
+      </div>
+      <div class="ps-fw-card ps-fw-card-flame">
+        <div class="ps-fw-num ps-fw-num-flame">04</div>
+        <h3 class="ps-h3">Continuity through remote</h3>
+        <p>Sample-based remote protocols (RPS, RTS, RDS, RDSP) extend the work between in-clinic sessions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PATHWAYS
+============================================================ -->
+<section class="ps-section ps-section-dark ps-section-pathways" id="pathways">
+  <div class="ps-pathways-field" aria-hidden="true"></div>
+  <div class="ps-container">
+    <div class="ps-sec-head">
+      <div class="ps-eyebrow ps-eyebrow-gold">The Transformation Pathway</div>
+      <h2 class="ps-h1">Five pathways. Each aligned with your type of work and objectives.</h2>
+      <p class="ps-lede ps-lede-dark">
+        A Pathway is a roadmap. You are enrolled on one. Within most pathways, you progress through
+        four Access Tiers — earned through stability and readiness, not the calendar.
+      </p>
+    </div>
+    <div class="ps-pw-grid">
+      <!-- ALIGN -->
+      <div class="ps-pw-card">
+        <div class="ps-pw-img">
+          <img src="project/assets/pathways/pathway_01_initiate.png" alt="" />
+        </div>
+        <div class="ps-pw-num">01</div>
+        <h3 class="ps-h3">Align</h3>
+        <p>For stable individuals who want preset frequency sessions only. No biofeedback. No tier progression. Book and attend as needed.</p>
+      </div>
+      <!-- FOCUS -->
+      <div class="ps-pw-card ps-pw-card-active">
+        <div class="ps-pw-img">
+          <img src="project/assets/pathways/pathway_02_focus.png" alt="" />
+        </div>
+        <div class="ps-pw-num">02</div>
+        <h3 class="ps-h3">Focus</h3>
+        <p>For one or two defined challenges. Structured guidance. Tier progression. Targeted frequency work.</p>
+      </div>
+      <!-- INTEGRATE -->
+      <div class="ps-pw-card">
+        <div class="ps-pw-img">
+          <div class="ps-pw-placeholder" aria-hidden="true">·</div>
+        </div>
+        <div class="ps-pw-num">03</div>
+        <h3 class="ps-h3">Integrate</h3>
+        <p>For chronic or multi-system patterns. Sequenced, layered, longer-arc work. Higher governance and progression.</p>
+      </div>
+      <!-- FORGE -->
+      <div class="ps-pw-card">
+        <div class="ps-pw-img">
+          <img src="project/assets/pathways/pathway_04_forge.png" alt="" />
+        </div>
+        <div class="ps-pw-num">04</div>
+        <h3 class="ps-h3">Forge</h3>
+        <p>For intensive protocols designed by the manufacturer. Multiple sessions per week. High structure.</p>
+      </div>
+      <!-- REMOTE PRIME -->
+      <div class="ps-pw-card">
+        <div class="ps-pw-img">
+          <img src="project/assets/pathways/pathway_05_continuum.png" alt="" />
+        </div>
+        <div class="ps-pw-num">05</div>
+        <h3 class="ps-h3">Remote Prime</h3>
+        <p>Full remote pathway for clients who cannot attend in person. Uses nail samples and structured remote sequencing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEVEN PILLARS
+============================================================ -->
+<section class="ps-section ps-section-warm" id="pillars">
+  <div class="ps-container">
+    <div class="ps-sec-head">
+      <div class="ps-eyebrow">The Seven Pillars</div>
+      <h2 class="ps-h1">What we work with, and how we read it.</h2>
+      <p class="ps-lede">
+        A taxonomy for the territory the practice covers. Every working phase is mapped
+        against the seven pillars at intake and reassessment.
+      </p>
+    </div>
+    <div class="ps-pillars-list">
+      <div class="ps-pillar-row">
+        <div class="ps-pillar-num">I</div>
+        <div class="ps-pillar-tick" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8l3.5 3.5L13 4.5"/>
+          </svg>
+        </div>
+        <div class="ps-pillar-title">Cellular terrain</div>
+        <div class="ps-pillar-body">Hydration, mineral status, oxidative balance — the substrate the rest of the work sits on.</div>
+      </div>
+      <div class="ps-pillar-row">
+        <div class="ps-pillar-num">II</div>
+        <div class="ps-pillar-tick" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8l3.5 3.5L13 4.5"/>
+          </svg>
+        </div>
+        <div class="ps-pillar-title">Autonomic regulation</div>
+        <div class="ps-pillar-body">Sympathetic-parasympathetic settling. The first place we look for legible change.</div>
+      </div>
+      <div class="ps-pillar-row">
+        <div class="ps-pillar-num">III</div>
+        <div class="ps-pillar-tick" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8l3.5 3.5L13 4.5"/>
+          </svg>
+        </div>
+        <div class="ps-pillar-title">Mitochondrial capacity</div>
+        <div class="ps-pillar-body">Energy production read across heart-rate variability and subjective endurance.</div>
+      </div>
+      <div class="ps-pillar-row">
+        <div class="ps-pillar-num">IV</div>
+        <div class="ps-pillar-tick" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8l3.5 3.5L13 4.5"/>
+          </svg>
+        </div>
+        <div class="ps-pillar-title">Lymphatic flow</div>
+        <div class="ps-pillar-body">Drainage and clearance, supported through scalar field and gentle adjuncts.</div>
+      </div>
+      <div class="ps-pillar-row">
+        <div class="ps-pillar-num">V</div>
+        <div class="ps-pillar-tick" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8l3.5 3.5L13 4.5"/>
+          </svg>
+        </div>
+        <div class="ps-pillar-title">Microbial coherence</div>
+        <div class="ps-pillar-body">Resident microbiota considered as an informational system, not a target list.</div>
+      </div>
+      <div class="ps-pillar-row">
+        <div class="ps-pillar-num">VI</div>
+        <div class="ps-pillar-tick" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8l3.5 3.5L13 4.5"/>
+          </svg>
+        </div>
+        <div class="ps-pillar-title">Neural patterning</div>
+        <div class="ps-pillar-body">Long-standing protective patterns observed through subtle frequency response.</div>
+      </div>
+      <div class="ps-pillar-row">
+        <div class="ps-pillar-num">VII</div>
+        <div class="ps-pillar-tick" aria-hidden="true">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8l3.5 3.5L13 4.5"/>
+          </svg>
+        </div>
+        <div class="ps-pillar-title">Field continuity</div>
+        <div class="ps-pillar-body">Remote resonance protocols holding the work between in-clinic sessions.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TECHNOLOGY
+============================================================ -->
+<section class="ps-section ps-section-dark" id="technology">
+  <div class="ps-container">
+    <div class="ps-sec-head">
+      <div class="ps-eyebrow ps-eyebrow-gold">Technology</div>
+      <h2 class="ps-h1">The instruments behind the work.</h2>
+      <p class="ps-lede ps-lede-dark">
+        Phoenix Sanctum™ operates a curated equipment stack. None of it is mysterious; the value
+        is in how it is sequenced, calibrated and read.
+      </p>
+    </div>
+    <div class="ps-tech-list">
+      <div class="ps-tech-row ps-tech-row-active">
+        <div class="ps-tech-name">Spooky2 Central</div>
+        <div class="ps-tech-spec">Plasma + contact + remote</div>
+        <div class="ps-tech-note">Primary frequency delivery system</div>
+        <div class="ps-tech-arrow">→</div>
+      </div>
+      <div class="ps-tech-row">
+        <div class="ps-tech-name">GeneratorX Pro</div>
+        <div class="ps-tech-spec">Biofeedback scan + apply</div>
+        <div class="ps-tech-note">Reading-first session protocol</div>
+        <div class="ps-tech-arrow">→</div>
+      </div>
+      <div class="ps-tech-row">
+        <div class="ps-tech-name">Scalar Field Cabin</div>
+        <div class="ps-tech-spec">Continuous low-intensity field</div>
+        <div class="ps-tech-note">Used as ambient session environment</div>
+        <div class="ps-tech-arrow">→</div>
+      </div>
+      <div class="ps-tech-row">
+        <div class="ps-tech-name">PEMF Mat</div>
+        <div class="ps-tech-spec">Pulsed electromagnetic</div>
+        <div class="ps-tech-note">Adjunct for autonomic regulation</div>
+        <div class="ps-tech-arrow">→</div>
+      </div>
+      <div class="ps-tech-row">
+        <div class="ps-tech-name">Cold Laser</div>
+        <div class="ps-tech-spec">Targeted photonic</div>
+        <div class="ps-tech-note">Localised application, supervised</div>
+        <div class="ps-tech-arrow">→</div>
+      </div>
+      <div class="ps-tech-row">
+        <div class="ps-tech-name">TENS Microcurrent</div>
+        <div class="ps-tech-spec">Sub-sensory current</div>
+        <div class="ps-tech-note">Adjunct only</div>
+        <div class="ps-tech-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SANCTUM SIGNAL
+============================================================ -->
+<section class="ps-section ps-section-light" id="signal">
+  <div class="ps-container ps-signal-grid">
+    <div>
+      <div class="ps-eyebrow">The Sanctum Signal</div>
+      <h2 class="ps-h1">
+        Quarterly long-form correspondence.<br>
+        <em style="color: var(--ps-gold-light); font-style: italic;">For the sceptical seeker.</em>
+      </h2>
+      <p class="ps-lede">
+        Position papers, reading lists, and the occasional measured progression note from
+        inside the practice. No marketing. No promotional cadence. Roughly four issues a year.
+      </p>
+      <form class="ps-signal-form" onsubmit="return false;">
+        <input type="email" placeholder="you@considered.email" aria-label="Email address" />
+        <button type="submit" class="ps-btn ps-btn-primary-light">Subscribe</button>
+      </form>
+    </div>
+    <div class="ps-signal-issues">
+      <div class="ps-signal-card ps-signal-card-gold">
+        <div class="ps-eyebrow ps-eyebrow-gold-light">Issue 04</div>
+        <div class="ps-h3">Why we read before we transmit</div>
+        <p>On the case for biofeedback as the gating step in any frequency working phase.</p>
+      </div>
+      <div class="ps-signal-card ps-signal-card-turq">
+        <div class="ps-eyebrow ps-eyebrow-turq-light">Issue 03</div>
+        <div class="ps-h3">Spooky2 — a position statement</div>
+        <p>Where the literature stands, what we use it for, and what we do not claim.</p>
+      </div>
+      <div class="ps-signal-card ps-signal-card-flame">
+        <div class="ps-eyebrow ps-eyebrow-flame-light">Issue 02</div>
+        <div class="ps-h3">Terrain coherence, defined</div>
+        <p>A working definition for the term we use most often, with seven references.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="ps-footer" id="contact">
+  <div class="ps-container">
+    <div class="ps-footer-top">
+      <div class="ps-footer-brand">
+        <img src="project/assets/logo/PS_Logo_Horizontal_Gold_OnBlack.png" alt="Phoenix Sanctum™" />
+        <p>Personalised frequency technology that supports the body's regulatory capacity.</p>
+      </div>
+      <div class="ps-footer-cols">
+        <div>
+          <div class="ps-footer-col-head">Practice</div>
+          <a href="#framework">The framework</a>
+          <a href="#pathways">Pathways</a>
+          <a href="#technology">Technology</a>
+          <a href="#pathways">Remote protocols</a>
+        </div>
+        <div>
+          <div class="ps-footer-col-head">Reading</div>
+          <a href="#signal">Sanctum Signal</a>
+          <a href="#">Position papers</a>
+          <a href="#">References</a>
+        </div>
+        <div>
+          <div class="ps-footer-col-head">Appointments</div>
+          <a href="#">Begin intake</a>
+          <a href="#">Sign in</a>
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <div class="ps-footer-rule"></div>
+    <div class="ps-footer-bottom">
+      <span>Phoenix Sanctum™ · Dee Why, NSW</span>
+      <span>© 2026 Phoenix Sanctum Pty Ltd</span>
+    </div>
+    <p class="ps-disclaimer">
+      Phoenix Sanctum™ is a complementary wellness practice. The information and services described
+      do not constitute medical advice, diagnosis, or treatment. Phoenix Sanctum™ does not diagnose,
+      treat, cure, or prevent any disease.
+    </p>
+  </div>
+</footer>
+
+<!-- ============================================================
+     JS — Nav active state on scroll
+============================================================ -->
+<script>
+(function () {
+  const links = document.querySelectorAll('.ps-nav-link');
+  const sections = Array.from(links)
+    .map(l => l.getAttribute('data-section'))
+    .filter(Boolean)
+    .map(id => document.getElementById(id))
+    .filter(Boolean);
+
+  function setActive(id) {
+    links.forEach(l => {
+      const match = l.getAttribute('data-section') === id;
+      l.classList.toggle('on', match);
+    });
+  }
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) setActive(e.target.id);
+      });
+    },
+    { threshold: 0.3, rootMargin: '-10% 0px -60% 0px' }
+  );
+
+  sections.forEach(s => observer.observe(s));
+
+  // Smooth-scroll anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
